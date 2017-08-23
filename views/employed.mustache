@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <title>Robots</title>
+  </head>
+  <body>
+    <h1>Robots</h1>
+    <h3>Unemployed</h3>
+    <h3>Employed</h3>
+    <div class="flexer">
+      {{#users}}
+      <div class="container">
+        <a href="/users/{{unemployed}}">
+      <img src="{{avatar}}"></img>
+      <li>{{name}}</li>
+      <li>{{job}}</li>
+      <li>{{company}}</li>
+      </a>
+      </div>
+      {{/users}}
+    </div>
+    <script src="data.js"></script>
+    <script src="robots.js"></script>
+  </body>
+</html>
